@@ -1,9 +1,9 @@
 const { ApolloServer } = require("@apollo/server");
 const { startStandaloneServer } = require("@apollo/server/standalone");
-const { Todos } = require("./data/dotos");
-const { typeDefs } = require("./graphql/typeDefs");
-const { resolvers } = require("./graphql/resolvers");
-const { TodoClass } = require("./utils/TodoClass");
+const { Todos } = require("./src/data/dotos");
+const { typeDefs } = require("./src/graphql/typeDefs");
+const { resolvers } = require("./src/graphql/resolvers");
+const { TodoClass } = require("./src/utils/TodoClass");
 
 const data = new TodoClass(Todos);
 
